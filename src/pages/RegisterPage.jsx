@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom"
 import Signup from "../components/Signup"
+import { Container } from "@mui/material"
 
 const RegisterPage = () => {
     return (
-        <div>
+        <Container sx={{textAlign: 'center'}}>
             <h1>Register</h1>
 
             <Signup />
@@ -11,7 +12,7 @@ const RegisterPage = () => {
             <p>
                 Already have an account? <Link to='/login'>Sign in</Link>
             </p>
-        </div>
+        </Container>
     )
 }
 
